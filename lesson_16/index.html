@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/common.css">
+		<link rel="stylesheet" href="css/style.css">
+		<title>Lesson 16</title>
+	</head>
+	<body>
+		<div class="wrapper">
+			<header class="header">
+				<div class="header__container">
+					<div class="header__logo">
+						<img src="/img/logo.svg" alt="logo createx">
+					</div>
+					<nav class="header__nav menu">
+						<ul class="menu__list">
+							<li class="menu__item"><a href="#" class="menu__link">About Us</a></li>
+							<li class="menu__item"><a href="#" class="menu__link">Courses</a></li>
+							<li class="menu__item"><a href="#" class="menu__link">Events</a></li>
+							<li class="menu__item"><a href="#" class="menu__link">Blog</a></li>
+							<li class="menu__item"><a href="#" class="menu__link">Contacts</a></li>
+						</ul>
+					</nav>
+					<div class="header__actions actions">
+						<a href="#" class="button">Get consultation</a>
+						<a href="#" class="action__auth">Log in / Register</a>
+					</div>
+				</div>
+			</header>
+			<main class="page">
+				<section class="page__mail mail-section">
+					<div class="mail-section__container">
+						<div class="mail-section__body body-mail">
+							<div class="body-mail__graphics">
+								<img class="body-mail__image" src="/img/mail-section-picture.svg" alt="mail section image">
+							</div>
+							<div class="body-mail__content">
+								<p class="body-mail__text">Any questions?</p>
+								<h2 class="body-mail__title">Drop us a line</h2>
+								<form action="https://jsonplaceholder.typicode.com/posts" class="body-mail__form form" method="post">
+									<div class="form__item">
+										<label for="f-name" class="form__label">First Name*</label>
+										<input id="f-name" name="f-name" type="text" placeholder="Your first name" class="form__input">
+									</div>
+									<div class="form__item">
+										<label for="s-name" class="form__label">Last  Name*</label>
+										<input id="s-name" name="s-name" type="text" placeholder="Your last name" class="form__input">
+									</div>
+									<div class="form__item">
+										<label for="e-mail" class="form__label">Email*</label>
+										<input id="e-mail" name="e-mail" type="email" placeholder="Your working email" class="form__input">
+									</div>
+									<div class="form__item">
+										<label for="phone" class="form__label">Phone</label>
+										<input id="phone" name="phone" type="tel" placeholder="Your phone number" class="form__input">
+									</div>
+									<div class="form__item form__item--big">
+										<label for="message" class="form__label">Your message*</label>
+										<textarea id="message" name="message" type="text" class="form__textarea">Your message</textarea>
+									</div>
+									<div class="form__item form__item--big item-radio">
+										<div class="item-radio__title">Are you 18 years old?</div>
+										<div class="item-radio_block">
+											<label class="item-radio__label" for="18-yes">
+												<input checked class="item-radio__input" id="18-yes" required autocomplete="off" value="yes" name="age" type="radio">Yes
+											</label>
+											<label class="item-radio__label" for="18-no">
+												<input class="item-radio__input" id="18-no" required autocomplete="off" name="age" value="no" type="radio">No
+											</label>
+										</div>
+									</div>
+									<div class="form__item">
+										<input id="policy" name="policy" type="checkbox" value="agree" placeholder="Your first name" class="form__input form__input--check">
+										<label for="policy" class="form__label form__label--check">I agree to receive communications from Createx Online School</label>
+									</div>
+									<div class="form__item">
+										<button class="form__button button" type="submit">Send message</button>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</section>
+			</main>
+			<footer class="footer__container footer"></footer>
+		</div>
+	</body>
+</html>
