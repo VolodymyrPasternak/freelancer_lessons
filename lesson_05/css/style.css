@@ -1,0 +1,90 @@
+@import url(reset.css);
+@import url(fonts.css);
+
+body {
+    background-color: #231F8B;
+}
+
+[class*="container"] {
+    margin: 0 auto;
+    max-width: 1050px;
+}
+
+.header-container{
+    margin-bottom: 70px;
+}
+
+.sub-header {
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.71;
+    letter-spacing: 0.2px;
+    color: #5A54F2;
+    margin-bottom: 10px;
+}
+
+.main-header {
+    font-family: "circular-std", sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.text {
+    font-family: "circular-std", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.43;
+    letter-spacing: 0.2px;
+    color: white;
+}
+
+.tile {
+    padding: 35px 40px;
+    margin-right: 30px;
+    background-color: white;
+    width: 230px;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 0;
+}
+
+.no-margin {
+    margin-right: 0;
+}
+
+.icon {
+    width: 72px;
+    margin-bottom: 20px;
+}
+.tile-header{
+    font-family: "circular-std", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: #252B42;
+    margin-bottom: 20px;
+    letter-spacing: 0.1px;
+}
+.line{
+    width: 50px;
+    height: 2px;
+    background-color: #E74040;
+    margin-bottom: 20px;
+}
+.tile-text{
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.43;
+    letter-spacing: 0.2px;
+    color: #737373;
+}
+.add-color {
+    background-color: #5A54F2;
+    color: white;
+}
+.even-tile{
+    margin-top: 48px;
+}
