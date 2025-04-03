@@ -130,7 +130,7 @@
     color: #fff;
 }
 .game__start:hover + .first__track {
-    opacity: 100;
+    opacity: 1;
 }
 
 [class*="__track"]{
@@ -138,10 +138,10 @@
     opacity: 0;
 }
 [class*="__track"]:hover{
-    opacity: 100;
+    opacity: 1;
 }
 [class*="__track"]:hover + [class*="__track"]{
-    opacity: 100;
+    opacity: 1;
 }
 .first__track{
     width: 50px;
