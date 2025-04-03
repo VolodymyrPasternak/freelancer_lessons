@@ -130,17 +130,21 @@
 }
 .game__start:hover + .first__track {
     opacity: 1;
+    visibility: visible;
 }
 
 [class*="__track"]{
     margin: 0 auto;
     opacity: 0;
+    visibility: hidden;
 }
 [class*="__track"]:hover{
     opacity: 1;
+    visibility: visible;
 }
 [class*="__track"]:hover + [class*="__track"]{
     opacity: 1;
+    visibility: visible;
 }
 .first__track{
     width: 50px;
