@@ -1,0 +1,219 @@
+@import url(reset.css);
+@import url(fonts.css);
+
+.wrapper {
+    overflow: clip;
+    min-height: 100%;
+}
+
+[class*="container"] {
+    margin: 0 auto;
+    font-family: "Inter", sans-serif;
+}
+
+.meet__section {
+    background-color: #412672;
+}
+
+.meet__container{
+    max-width: 1201px;
+    padding: 61px 0 102px 0;
+}
+.tile__wrapper{
+    font-size: 0;
+}
+.meet__header{
+    font-weight: 400;
+    font-size: 36px;
+    color: #fff;
+    line-height: 1.27;
+    margin-bottom: 31px;
+}
+.meet__header span{
+    font-weight: 700;
+}
+.tile{
+    display: inline-block;
+    vertical-align: top;
+    max-width: 387px;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0px 384px 108px 0px rgba(0, 0, 0, 0.00), 
+                0px 246px 98px 0px rgba(0, 0, 0, 0.01), 
+                0px 138px 83px 0px rgba(0, 0, 0, 0.05), 
+                0px 62px 62px 0px rgba(0, 0, 0, 0.09), 
+                0px 15px 34px 0px rgba(0, 0, 0, 0.10);
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.27;
+    color: #4F4F4F;
+}
+.tile:hover{
+    background-color: #FFBE48;
+}
+.tile:not(:last-child){
+    margin-right: 20px;
+}
+.tile *:not(:last-child){
+    margin-bottom: 16px;
+}
+.tile__header{
+    font-weight: 600;
+    font-size: 22px;
+    color: #000;
+}
+.tile__link {
+    color: #FE3F3F;
+}
+
+.faculty__container {
+    max-width: 518px;
+    padding: 153px 0 139px 0;
+    color: #412672;
+    line-height: 1.27;
+}
+
+.faculty__container *:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.faculty__header {
+    font-weight: 400;
+    font-size: 34px;
+}
+.faculty__header span {
+    font-weight: 700;
+}
+
+.list__item {
+    color: #4F4F4F;
+    font-size: 20px;
+    line-height: 2.55;
+}
+
+.list__item::before {
+    content: "";
+    width: 29px;
+    height: 29px;
+    background: url(../img/check.png) center no-repeat;
+    vertical-align: middle;
+    margin-right: 15px;
+}
+
+.game__section {
+    
+    
+}
+
+.game__container {
+    max-width: 1000px;
+    padding: 50px 0;
+    background: url(../img/battlefield.png) center center no-repeat;
+    background-size: cover;
+    cursor: url('../img/drone_cursor.ico'), auto;
+}
+.game__header {
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    color: #FE3F3F;
+}
+
+.game__start {
+    width: 300px;
+    background-color: #00C853;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+.game__start p{
+    font-size: 36px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+}
+.game__start:hover + .first__track {
+    opacity: 1;
+}
+
+[class*="__track"]{
+    margin: 0 auto;
+    opacity: 0;
+}
+[class*="__track"]:hover{
+    opacity: 1;
+}
+[class*="__track"]:hover + [class*="__track"]{
+    opacity: 1;
+}
+.first__track{
+    width: 50px;
+    height: 70px;
+    background-color: #00C853;
+}
+
+.second__track {
+    width: 300px;
+    height: 45px;
+    margin-right: 475px;
+    background-color: #64DD17;
+}
+
+.third__track{
+    width: 40px;
+    height: 50px;
+    margin-right: 735px;
+    background-color: #AEEA00;
+}
+
+.fourth__track{
+    width: 750px;
+    height: 35px;
+    margin-left: 225px;
+    background-color: #FFD600;
+}
+.fifth__track{
+    width: 30px;
+    height: 70px;
+    margin-left: 945px;
+    background-color: #FFEB3B;
+}
+.sixth__track{
+    width: 600px;
+    height: 25px;
+    margin-left: 375px;
+    background-color: #FFB300;
+}
+.seventh__track{
+    width: 20px;
+    height: 50px;
+    margin-right: 605px;
+    background-color: #FF8F00;
+}
+.eighth__track{
+    width: 300px;
+    height: 15px;
+    margin-left: 375px;
+    background-color: #FF6F00;
+}
+.nineth__track{ 
+    width: 10px;
+    height: 40px;
+    margin-left: 665px;
+    background-color: #FF5252;
+}
+.finish{ 
+    margin: 0 auto;
+    margin-left: 630px;
+    width: 200px;
+    height: 200px;
+    background: url("../img/pig.png") no-repeat;
+    background-size: contain;
+}
+
+.finish:hover {
+    background: url("../img/grave_.png") no-repeat;
+    background-size: contain;
+}
+
