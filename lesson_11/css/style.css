@@ -1,0 +1,378 @@
+@import url(reset.css);
+
+.wrapper {
+    overflow: clip; 
+    height: 100%;
+    position: relative;
+    background-color: #7CBCD3;
+}
+
+/* =============== City ================ */
+
+.cloud-left{
+    position: absolute;
+    top: 40px;
+    left: 120px;
+    width: 350px;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 20px;
+}
+.cloud-left__el {
+    position: absolute;
+    top:50px;
+    left: 170px;
+    width: 150px;
+    height: 150px;
+    background-color: white;
+    border-radius: 50%;
+}
+.cloud-left__el::before{
+    content: "";
+    position: absolute;
+    top:-30px;
+    left: -170px;
+    width: 220px;
+    height: 220px;
+    background-color: white;
+    border-radius: 50%;
+}
+.cloud-left__el::after{
+    content: "";
+    position: absolute;
+    top:50px;
+    left: 110px;
+    width: 70px;
+    height: 70px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.cloud-right{
+    position: absolute;
+    top: 70px;
+    right: 220px;
+    width: 250px;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 20px;
+}
+.cloud-right__el {
+    position: absolute;
+    top:50px;
+    left: 70px;
+    width: 150px;
+    height: 150px;
+    background-color: white;
+    border-radius: 50%;
+}
+.cloud-right__el::before{
+    content: "";
+    position: absolute;
+    top:50px;
+    left: -80px;
+    width: 120px;
+    height: 120px;
+    background-color: white;
+    border-radius: 50%;
+}
+.cloud-right__el::after{
+    content: "";
+    position: absolute;
+    top:50px;
+    left: 110px;
+    width: 70px;
+    height: 70px;
+    background-color: white;
+    border-radius: 50%;
+}
+.city-far {
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    top: 20%;
+    left: 0;
+    background: url(../img/city-far.svg) center center / contain repeat-x;
+    z-index: 1;
+}
+.city-close {
+    position: absolute;
+    width: 100%;
+    height: 20%;
+    top: 50%;
+    left: 0;
+    background: url(../img/city-close.svg) center center / contain repeat-x;
+    z-index: 2;
+}
+.ground {
+    position: absolute;
+    width: 100%;
+    height: 30%;
+    bottom: 0;
+    left: 0;
+    background-color: #F1A652;
+}
+.road {
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    top: 25%;
+    left: 0;
+    background-color: #222B3A;
+}
+.road_lines {
+    position: absolute;
+    width: 100%;
+    height: 5%;
+    top: 45%;
+    left: -2%;
+    background: repeating-linear-gradient(
+        to right,
+        transparent 0%,
+        transparent 5%,
+        white 5%,
+        white 10%
+      );
+}
+
+/* =============== Auto ================= */
+.auto {
+    width: 760px;
+    height: 300px;
+    position: absolute;
+    top: 55%;
+    left: 2%;
+    z-index: 3;
+    transform: scale(.45);
+}
+
+.el-first {
+    position: absolute;
+    top: 168px;
+    width: 760px;
+    height: 60px;
+    background-color: #1C324A;
+    border-radius: 17px 20px 21px 24px;
+    z-index: 1;
+}
+.el-second {
+    position: absolute;
+    top: 90px;
+    left: 15px;
+    width: 430px;
+    height: 70px;
+    background-color: #1C324A;
+    border-top-left-radius: 24px;
+    z-index: 1;
+}
+.el-third {
+    position: absolute;
+    top: 159px;
+    left: 13.5px;
+    width: 430px;
+    height: 15px;
+    background-color: #1C324A;
+    z-index: 1;
+}
+
+.el-fourth {
+    position: absolute;
+    top: 85px;
+    right: 26px;
+    width: 430px;
+    height: 85px;
+    overflow: hidden;
+    z-index: 1;
+}
+.el-fourth::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 400px;
+    height: 100px;
+    background-color: #1C324A;
+    border-top-right-radius: 55% 54%;
+    z-index: 1;
+}
+.el-fifth {
+    position: absolute;
+    width: 600px;
+    height: 100px;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.el-sixth {
+    position: absolute;
+    top: 0px;
+    left: 20px;
+    width: 600px;
+    height: 500px;
+    background-color: #1C324A;
+    border-top-left-radius: 40% 68%;
+    border-top-right-radius: 40% 85%;
+}
+.el-seventh {
+    position: absolute;
+    top:50px;
+    left: 59px;
+    width: 86px;
+    height: 51.5px;
+    overflow: hidden;
+}
+.el-seventh::before {
+    content: "";
+    position: absolute;
+    right: -14px;
+    bottom: 5px;
+    width: 200px;
+    height: 100px;
+    border-bottom-right-radius: 77% 100%;
+    box-shadow: 5px 20px 0 15px #1C324A;
+}
+.el-eighth {
+    position: absolute;
+    top:1px;
+    right: 45px;
+    width: 70px;
+    height: 85px;
+    overflow: hidden;
+    z-index: 1;
+}
+.el-eighth::before {
+    content: "";
+    position: absolute;
+    left: -32.5px;
+    top: -35.5px;
+    width: 160px;
+    height: 100px;
+    border-radius: 0% 0% 30% 0% / 30% 30% 30% 0%;
+    transform: rotate(35deg);
+    box-shadow: 0 0 0 13px #1C324A;
+}
+.el-nineth {
+    position: absolute;
+    top: 174px;
+    right: 0px;
+    width: 600px;
+    height: 60px;
+    background-color: #1C324A;
+    border-radius: 17px 20px 27px 24px;
+    box-shadow: -15px 5px 0 10px #121D2B;
+    z-index: 0;
+}
+.auto__elements{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+.front-window {
+    position: absolute;
+    top: 20px;
+    left: 324px;
+    width: 183px;
+    height: 75px;
+    background-color: transparent;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.front-window::before {
+    content: "";
+    position: absolute;
+    width: 253px;
+    height: 248px;
+    background-color: #7CBCD3;
+    border-top-right-radius: 88% 100%;
+}
+
+.back-window {
+    position: absolute;
+    top: 20px;
+    left: 150px;
+    width: 155px;
+    height: 75px;
+    background-color: transparent;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.back-window::before {
+    content: "";
+    position: absolute;
+    width: 250px;
+    height: 195px;
+    left: -31px;
+    border-top-left-radius: 50% 100%;
+    background-color: #7CBCD3;
+}
+.font-door-handle{
+    position: absolute;
+    top: 115px;
+    left: 341px;
+    width: 35px;
+    height: 10px;
+    background-color: #121D2B;
+    border-radius: 5px;
+}
+.back-door-handle{
+    position: absolute;
+    top: 115px;
+    left: 162px;
+    width: 35px;
+    height: 10px;
+    background-color: #121D2B;
+    border-radius: 5px;
+}
+.front-light{
+    position: absolute;
+    top: 131px;
+    right: 13px;
+    width: 65px;
+    height: 39px;
+    background-color: #FCF2E2;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 80px 50px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 80px 60px;
+}
+.back-light{
+    position: absolute;
+    top: 120px;
+    left: 13px;
+    width: 30px;
+    height: 40px;
+    background-color: brown;
+    border-radius: 2px 10px 10px 2px;
+}
+.front-wheel {
+    position: absolute;
+    top: 182px;
+    right:113px;
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    background-color: #748296;
+    box-shadow: 0px 0px 0 27px #121D2B,
+                inset 0px 0px 0 23px #425468;
+}
+.back-wheel {
+    position: absolute;
+    top: 182px;
+    left:112px;
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    background-color: #748296;
+    box-shadow: 0px 0px 0 27px #121D2B,
+                inset 0px 0px 0 23px #425468;
+}
+.shadow{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 718px;
+    height: 22px;
+    border-radius: 15px;
+    background-color: #121D2B;
+}
