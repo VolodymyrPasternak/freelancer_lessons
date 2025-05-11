@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Lesson 14</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header"></header>
+        <main class="page">
+            <form action="#" method="post" enctype="multipart/form-data" class="form">
+                <div class="form__container">
+                    <div class="form__billing">
+                        <h2 class="form__header">Billing Information</h2>
+                        <div class="form__row">
+                            <div class="form__line line">
+                                <label for="f_name" class="line__label">First name</label>
+                                <input id="f_name" placeholder="Your first name" name="form[]" type="text" class="line__input">
+                            </div>
+                            <div class="form__line line">
+                                <label for="l_name" class="line__label">Last name</label>
+                                <input id="l_name" placeholder="Your last name" name="form[]" type="text" class="line__input">
+                            </div>
+                            <div class="form__line line">
+                                <label for="company" class="line__label">Company Name <span>(optional)</span></label>
+                                <input id="company" placeholder="Company name" name="form[]" type="text" class="line__input">
+                            </div>
+                        </div>
+                        <div class="form__row">
+                            <div class="form__line line">
+                                <label for="street" class="line__label">Street Address</label>
+                                <input id="street" placeholder="Enter Street" type="text" class="line__input">
+                            </div>
+                        </div>
+                        <div class="form__row">
+                            <div class="form__line line-select">    
+                                <label class="line-select__label">Country / Region</label>
+                                    <select name="form[country]" class="line-select__select">
+                                        <option selected value="1">Select</option>
+                                        <option value="2">Country 1</option>
+                                        <option value="3">Country 2</option>
+                                    </select>
+                                
+                            </div>
+                            <div class="form__line line-select">
+                                <label class="line-select__label">States</label>
+                                <select name="form[states]" class="line-select__select">
+                                    <option selected value="1">Select</option>
+                                    <option value="2">States 1</option>
+                                    <option value="3">States 2</option>
+                                </select>
+                                
+                            </div>
+                            <div class="form__line line-select line-select--width">
+                                <label for="zip-code" class="line__label">Zip Code</span></label>
+                                <input id="zip-code" placeholder="Zip Code" name="form[]" type="text" class="line__input">
+                            </div>
+                        </div>
+                        <div class="form__row">
+                            <div class="form__line line">
+                                <label for="email" class="line__label">Email</label>
+                                <input id="email" placeholder="Email Address" name="form[]" type="email" class="line__input">
+                            </div>
+                            <div class="form__line line">
+                                <label for="phone" class="line__label">Phone</label>
+                                <input id="phone" placeholder="Phone number" name="form[]" type="tel" class="line__input">
+                            </div>
+                        </div>
+                        <div class="form__row">
+                            <label for="shipping-address" class="form__label">
+                                <input id="shipping-address" type="checkbox" name="form[]" class="form__check">
+                                Ship to a different address
+                            </label>
+                        </div>
+                        <h2 class="form__header">Additional Info</h2>
+                        <div class="form__row">
+                            <div class="form__line line">
+                                <label for="order-text" class="line__label">Order Notes <span>(Optional)</span></label>
+                                <textarea id="order-text" placeholder="Notes about your order, e.g. special notes for delivery" name="form[]" type="textarea" class="line__input line__input--textarea"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form_summary">
+                        <h2 class="form__header form__header--summary">Order Summery</h2>
+                        <div class="form__row">
+                            <p class="form__description">Green Capsicum x5</p>
+                            <p class="form__value">$70.00</p>
+                        </div>
+                        <div class="form__row">
+                            <p class="form__description">Red Capsicum x1</p>
+                            <p class="form__value">$14.00</p>
+                        </div>
+                        <div class="form__row">
+                            <p class="form__description">Subtotal:</p>
+                            <p class="form__value">$84.00</p>
+                        </div>
+                        <div class="form__row">
+                            <p class="form__description">Shipping:</p>
+                            <p class="form__value">Free</p>
+                        </div>
+                        <div class="form__row">
+                            <p class="form__description">Total:</p>
+                            <p class="form__value">$84.00</p>
+                        </div>
+                        <h2 class="form__header form__header--summary">Payment Method</h2>
+                        <div class="form__row form__row--option">
+                            <label class="form__label">
+                                <input type="radio" name="form[paymentMethod]" class="form__option">
+                                Cash on Delivery
+                            </label>
+                            <label class="form__label">
+                                <input type="radio" name="form[paymentMethod]" class="form__option">
+                                Paypal
+                            </label>
+                            <label class="form__label">
+                                <input type="radio" name="form[paymentMethod]" class="form__option">
+                                Amazon Pay
+                            </label>
+                        </div>
+                        <button class="form__submit" type="submit">Place Order</button>
+                    </div>
+                </div>
+            </form>
+        </main>
+        <footer class="footer">
+            <div class="fake-select">
+                <div class="fake-select__option">1</div>
+                <div class="fake-select__option">2</div>
+                <div class="fake-select__option">3</div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
