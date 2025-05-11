@@ -36,16 +36,16 @@
     margin-bottom: 32px;
 }
 .form__wrapper--shipping {
-    display: none;
     opacity: 0;
+    visibility: hidden;
     max-height: 0;
-    transition: opacity .5s,
-                max-height .5s;
+    transition: opacity 1s ease,
+                max-height 1s ease;
     will-change: max-height, opacity;
 }
 .form__wrapper--shipping.open {
-    display: flex;
     opacity: 1;
+    visibility: visible;
     max-height: 100%;
 }
 .form__header {
