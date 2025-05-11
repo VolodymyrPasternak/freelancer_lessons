@@ -36,6 +36,9 @@
     margin-bottom: 32px;
 }
 .form__wrapper--shipping {
+    padding-bottom: 0;
+    border-bottom: 0 solid #E6E6E6;
+    margin-bottom: 0;
     opacity: 0;
     visibility: hidden;
     max-height: 0;
@@ -44,6 +47,9 @@
     will-change: max-height, opacity;
 }
 .form__wrapper--shipping.open {
+    padding-bottom: 32px;
+    border-bottom: 1px solid #E6E6E6;
+    margin-bottom: 32px;
     opacity: 1;
     visibility: visible;
     max-height: 100%;
