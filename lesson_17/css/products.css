@@ -298,6 +298,7 @@
 }
 .offer__image img {
     object-fit: cover;
+    max-width: 100%;
 }
 .offer__details {
     display: flex;
