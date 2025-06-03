@@ -299,6 +299,7 @@
 .offer__image img {
     object-fit: cover;
     max-width: 100%;
+    display: block;
 }
 .offer__details {
     display: flex;
@@ -332,6 +333,7 @@
 .advertise--offer{
     grid-column: 4/5;
     grid-row: 1/5;
+    aspect-ratio: 312/423;
 }
 .advertise__image {
     object-fit: cover;
