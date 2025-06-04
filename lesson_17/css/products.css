@@ -325,22 +325,28 @@
 }
 .offer_randking {
 }
+
 .offers__advertise {
 }
-.advertise {
-    
-}
-.advertise--offer{
+.advertise-offer {
     grid-column: 4/5;
     grid-row: 1/5;
-    aspect-ratio: 312/423;
+   position: relative;
+   overflow: hidden;
 }
-.advertise__image {
-    object-fit: cover;
+.advertise-offer__image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;              /* потрібно */
+    height: 100%;             /* потрібно */
+    object-fit: cover;        /* тепер працює */
+    z-index: -1;
+    display: block;
 }
-.advertise__title {
+.advertise-offer__title {
 }
-.advertise__offer {
+.advertise-offer__score {
 }
-.advertise__link {
+.advertise-offer__link {
 }
