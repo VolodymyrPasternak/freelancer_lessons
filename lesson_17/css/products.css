@@ -202,11 +202,11 @@
     outline: 1px solid #2C742F;
 }
 @media (any-hover: hover), (pointer: fine) {
-    .advertise__link:hover, .advertise-offer__link:hover {
+    .advertise__link:hover {
         background-color: #00B207;
         color: #FFF;
     }
-    .advertise__link:hover::after, .advertise-offer__link:hover::after {
+    .advertise__link:hover::after {
         background-image: url(../img/arrow_white.svg);
     }
     
@@ -286,25 +286,25 @@
 }
 .offer {
     display: flex;
-    border: 1px solid #E6E6E6;
+    /* border: 1px solid #E6E6E6; */
 }
 .offer__image {
     padding: 5px;
-    flex: 0 0 102px;
+    aspect-ratio: 102/102;
+    flex: 0 0 116px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .offer__image img {
     object-fit: cover;
-
 }
 .offer__details {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    padding: 23px 12px 22px 12px;
+    padding: 24px 12px;
     
 }
 .offer__title {
@@ -323,62 +323,21 @@
 }
 .offer_randking {
 }
-
 .offers__advertise {
 }
-.advertise-offer {
-    grid-column: 4/5;
-    grid-row: 1/5;
-    position: relative;
-    overflow: hidden;
-    color: #1A1A1A;
-    text-align: center;
-
-}
-.advertise-offer__image {
-    position: absolute;
-    top: 0%;
-    left: 85%;
-    transform: scale(2.9);
-    object-fit: cover; 
-    z-index: -1;
-   
-}
-.advertise-offer__title {
-    font-size: 12px;
-    font-weight: 500;
-    letter-spacing: 0.36px;
-    text-transform: uppercase;
-    margin: 32px 0 12px 0;
+.advertise {
     
 }
-.advertise-offer__score {
-    font-size: 32px;
-    line-height: 1.2;
-    font-weight: 400;
-    margin-bottom: 20px;
+.advertise--offer{
+    grid-column: 4/5;
+    grid-row: 1/5;
 }
-.advertise-offer__score span {
-    font-weight: 600;
+.advertise__image {
+    object-fit: cover;
 }
-.advertise-offer__link  {
-    background-color: #FFF;
-    border-radius: 43px;
-    padding: 14px 32px;
-    color: #00B207;
-    font-size: 14px;
-    font-weight: 600;
-    line-height: 1.2;
-    text-transform: capitalize;
-    transition: color .3s ease,
-                background-color .3s ease;
+.advertise__title {
 }
-.advertise-offer__link::after {
-    content: "";
-    vertical-align: middle;
-    width: 15px;
-    height: 12px;
-    background: url(../img/arrow.svg) no-repeat center / 15px 12px;
-    margin-left: 12px;
-    transition: background-image .3s ease;
+.advertise__offer {
+}
+.advertise__link {
 }
