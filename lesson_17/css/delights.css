@@ -1,0 +1,184 @@
+
+.delights{
+    background-color: #F8F3EC;
+    padding: 64px 0;
+    font-family: "KoPubBatang", serif;
+    font-weight: 400;
+}
+.delights__container {
+    max-width: 1230px;
+    margin: 0 auto;
+    padding: 0 15px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 400px));
+    justify-content: center;
+    row-gap: 51px;
+}
+.delights__header {
+    font-size: 30px;
+    font-weight: 300;
+}
+.item {
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+}
+.item__pic {
+    transition: opacity .3s ease;
+}
+.item__pic img {
+    object-fit: cover;
+    aspect-ratio: 300 / 376;
+}
+.item__header {
+    display: flex;
+    gap: 21.5px;
+    align-items: center;
+}
+.item__header h3 {
+    color: #2C2C2C;
+    font-size: 20px;
+    font-weight: 400;
+    flex-grow: 1;
+}
+.item__like {
+    width: 25px;
+    height: 25px;
+    background: url(../img/like.webp) no-repeat center / 21px 21px;
+}
+.item__buy {
+    width: 25px;
+    height: 25px;
+    background: url(../img/basket.webp) no-repeat center / 21px 21px;
+}
+.item__pricing {
+    font-family: "Carme", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #4E4E4E;
+}
+.delights__link {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border: 1px solid #DBCCBA;
+    box-shadow: inset 0 0 0 14px #FFF;
+    background-color: #DBCCBA;
+    color: #2C2C2C;
+    font-size: 17px;
+    line-height: 1.38;
+    transition: box-shadow .3s ease;
+}
+.delights__link div::after {
+    content: "";
+    width: 24px;
+    height: 14px;
+    background: url(../img/arrow.webp) no-repeat center / 24px 14px;
+    vertical-align: middle;
+    margin-left: 12px;
+}
+
+@media (min-width: 660px) {
+    .delights__container {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        justify-content: center;
+        justify-items: center;
+        row-gap: 37px;
+        column-gap: 30px;
+    }
+    .delights__header {
+        font-size: 50px;
+        grid-column: 1 / 3;
+    }
+    .item {
+        max-width: 370px;
+    }
+    .delights__link {
+        grid-column: 1 / 3;
+    }
+}
+@media (min-width: 990px) {
+    .delights__container {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        grid-auto-rows: minmax(250px, auto);
+        row-gap: 14px;
+        align-items: center;
+
+    }
+    .delights__header {
+        grid-column: 2 / 4;
+        align-self: center;
+    }
+    .item:nth-of-type(1) {
+        grid-row: 1/3;
+    }
+    .item:nth-of-type(2), .item:nth-of-type(3) {
+        grid-row: 2/4;
+    }
+    .item:nth-of-type(4) {
+        grid-row: 3/5;
+    }
+    .item:nth-of-type(5), .item:nth-of-type(6) {
+        grid-row: 4/6;
+    }
+    .delights__link {
+        grid-column: 1 / 2;
+        grid-row: 5/6;
+        align-self: center;
+        justify-self: start;
+        width: auto;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+@media (min-width: 1200px) {
+    .delights__container {
+        grid-template-columns: 1fr 370px 370px;
+        justify-items: stretch;
+    }
+    .delights__header {
+        font-size: 60px;
+    }
+    .item:nth-of-type(1), .item:nth-of-type(4) {
+        justify-self: stretch;
+        width: 100%;
+    }
+    .item {
+        max-width: none;
+    }
+    .item__pic img {
+        aspect-ratio: 370/378;
+    }
+    .item:nth-of-type(1) img, .item:nth-of-type(4) img {
+        aspect-ratio: 400/429;
+    }
+}
+@media (any-hover: hover), (pointer: fine) {
+    .item__pic:hover {
+        opacity: .9;
+    }
+    .delights__link:hover {
+        box-shadow: none;
+    }
+    .item__like:hover, .item__buy:hover {
+        border: 1px solid #999999;
+        box-shadow: 0px 0px 6px 0px #999999;
+    }
+}
+.item__pic:focus-visible {
+    outline: 2px solid #999999;
+    box-shadow: 0px 0px 15px 0px #999999;
+}
+.item__like:focus-visible, .item__buy:focus-visible  {
+    outline: 1px solid #999999;
+    box-shadow: 0px 0px 10px 0px #999999;
+}
+
+.delights__link:focus-visible {
+    outline: 2px solid #999999;
+    box-shadow: 0px 0px 10px 0px #999999;
+}
