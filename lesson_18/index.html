@@ -11,15 +11,15 @@
         <header class="header"></header>
         <main class="page">
             <div class="page__container">
-                <article class="story">
-                   <section class="story__content">
+                <div class="page__wrapper">
+                    <article class="story">
                         <figure class="story__main-image"><img src="img/main-image__oranges.webp" alt="Fresh whole and sliced oranges with a green leaf on a white background."></figure>
                         <div class="story__meta">
                             <div class="story__tag"><a href="#">Food</a></div>
                             <div class="story__tag"><p>By</p><a href="#"></a>Admin</div>
                             <div class="story__tag"><p>65</p><a href="#"> Comments</a></div>
                         </div>
-                        <h2 class="story__title">Maecenas tempor urna sed quam mollis, a placerat dui fringill Suspendisse.</h2>
+                        <h3 class="story__title">Maecenas tempor urna sed quam mollis, a placerat dui fringill Suspendisse.</h3>
                         <div class="story__details">
                             <div class="story__autor">
                                 <figure class="story__avatar">
@@ -44,7 +44,7 @@
                         <figure class="story__image"><img src="img/content-image_2.webp" alt="Sliced mango with juice and mint leaves on green background."></figure>
                         <p>Sed dictum non nulla eu imperdiet. Duis elit libero, vulputate quis vehicula ut, vestibulum ut mauris. Nullam non felis varius dui rutrum rutrum in a nisi. Suspendisse elementum rutrum lorem sed luctus. Proin iaculis euismod metus non sollicitudin. Duis vel luctus lacus. Nullam faucibus iaculis convallis. In ullamcorper nibh ipsum, eget lacinia eros pulvinar a. Integer accumsan arcu nec faucibus ultricies.
                         </p>
-                         <div class="story__advertise advertise">
+                            <div class="story__advertise advertise">
                             <figure class="advertise__image"><img src="img/advertise-banner.webp" alt="Assorted fresh vegetables on black background with autumn leaves."></figure>
                             <div class="advertise__details">
                                 <h4 class="advertise__title">Summer Sales</h4>
@@ -55,14 +55,14 @@
                                 <p>up to <mark>56%</mark> Off</p>
                             </div>
                         </div>
-                   </section>
-                   <section class="story__comments comments">
+                    </article>
+                    <section class="story__comments comments">
                         <h4 class="comments__title">Leave a Comment</h4>
                         <form method="post" action="#" class="comments__add-comment form">
                             <fieldset class="form__row">
                                 <div class="form__line">
                                     <label for="name" class="form__name">Full Name</label>
-							        <input id="name" name="form[]" placeholder="Zakir Hossen" type="text">
+                                    <input id="name" name="form[]" placeholder="Zakir Hossen" type="text">
                                 </div>
                                 <div class="form__line">
                                     <label for="email" class="form__email">Email</label>
@@ -123,8 +123,8 @@
                             </li>
                         </ul>
                         <button class="comments__open-more">Load More</button>
-                   </section>
-                </article>
+                    </section>
+                </div>
                 <aside class="sidebar">
                     <div class="sidebar__container">
                         <form class="sidebar__search-form" action="#" method="get">
